@@ -1,5 +1,7 @@
 # Flores amarillas para Yomara
 
+> **Status:** this is a demo (a personal gift page) and it is not maintained. The content below is in Spanish because the page is written for a Spanish-speaking recipient.
+
 Jardín 3D de flores amarillas (Three.js) con un mensaje en seis pasos. Cada paso abre una ola de flores; el último florece todo el campo, cae una lluvia de pétalos y aparece la foto. Tocar el jardín siembra una flor.
 
 ## Archivos
@@ -26,3 +28,11 @@ bash build.sh
 2. **GitHub Pages** — subir el repo a GitHub, *Settings → Pages → Deploy from branch → `/docs`*. Queda en `https://<usuario>.github.io/yellow-flowers/`, sin cuenta ni app para quien lo abre.
 3. **Netlify Drop / Vercel** — arrastrar la carpeta `docs/` a [app.netlify.com/drop](https://app.netlify.com/drop) y listo, URL pública en segundos.
 4. **Archivo offline** — enviar `docs/flores-amarillas-offline.html`. En Android se abre con Chrome; en iPhone, abrir el adjunto y elegir *Abrir en Safari* (o guardarlo en Archivos y tocarlo).
+
+## Check
+
+```bash
+bash scripts/check.sh
+```
+
+Runs in Docker (`node:22-alpine`) and verifies that the inline JavaScript of `index.html` and both exports in `docs/` parses.
